@@ -26,9 +26,20 @@ unhealthy wenn VM mit „halt“ gestoppt wurde
  
 ## Ergebnisse im Detail
 ### Hostmetriken verfügbar
-#### VM mit Agent
-
-#### VM ohne Agent
-
-
-
+VM mit Agent
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwith-hostmetrik.png)
+VM ohne Agent
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwithout-hostmetrik.png)
+### Health Status
+VM mit Agent
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwith-healthstatus.png)
+VM ohne Agent
+Nach „sudo halt“
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwithout-healthstatus.png)
+Nach Restart über Portal:
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwithout-healthstatus2.png)
+### Passwort reset
+VM mit Agent
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwith-password.png)
+VM ohne Agent
+![Image](https://github.com/ckoehler99/Azure/blob/master/tests/waagent/images/vmwithout-password.png)
