@@ -1,4 +1,4 @@
-### Vergleich VM mit und ohne WA Agent
+# Vergleich VM mit und ohne WA Agent
 ## Testdurchführung
 -	2 VMs über das gleiche Template installiert
 -	Im Template Variable über provisionVMAgent True/False die Installation beeinflusst
@@ -24,5 +24,11 @@ unhealthy wenn VM mit „halt“ gestoppt wurde
 -	Remote Commandos funktionieren an VM ohne Agent nicht
 -	Passwort und SSH Keys konnten nur bei der VM mit Agent durchgeführt werden
  
+## Ergebnisse im Detail
+### Hostmetriken verfügbar
+#### VM mit Agent
+
+#### VM ohne Agent
+
 
 
