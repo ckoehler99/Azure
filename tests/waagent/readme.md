@@ -24,3 +24,5 @@ unhealthy wenn VM mit „halt“ gestoppt wurde
 -	Remote Commandos funktionieren an VM ohne Agent nicht
 -	Passwort und SSH Keys konnten nur bei der VM mit Agent durchgeführt werden
  
+
+
