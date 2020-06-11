@@ -23,6 +23,7 @@ unhealthy wenn VM mit „halt“ gestoppt wurde
 -	Metriken werden bei beiden VMs angezeigt (Host, Disk, Network usw.)
 -	Remote Commandos funktionieren an VM ohne Agent nicht
 -	Passwort und SSH Keys konnten nur bei der VM mit Agent durchgeführt werden
+- die Seriele Console funktioniert bei beiden VMs und auch darüber ist eine Anmeldung möglich
  
 ## Ergebnisse im Detail
 ### Hostmetriken verfügbar
