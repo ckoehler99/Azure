@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "networkInterfaceName": {
+      "value": "vmwithoutwa884"
+    },
+    "networkSecurityGroupName": {
+      "value": "vmwithoutwa-nsg"
+    },
+    "networkSecurityGroupRules": {
+      "value": [
+        {
+          "name": "SSH",
+          "properties": {
+            "priority": 300,
+            "protocol": "TCP",
+            "access": "Allow",
+            "direction": "Inbound",
+            "sourceAddressPrefix": "*",
+            "sourcePortRange": "*",
+            "destinationAddressPrefix": "*",
+            "destinationPortRange": "22"
+          }
+        }
+      ]
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "virtualNetworkName": {
+      "value": "rg-ck99io-compute-vnet"
+    },
+    "addressPrefixes": {
+      "value": [
+        "10.0.0.0/24"
+      ]
+    },
+    "subnets": {
+      "value": [
+        {
+          "name": "default",
+          "properties": {
+            "addressPrefix": "10.0.0.0/24"
+          }
+        }
+      ]
+    },
+    "publicIpAddressName": {
+      "value": "vmwithoutwa2-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    },
+    "virtualMachineName": {
+      "value": "vmwithoutwa2"
+    },
+    "virtualMachineComputerName": {
+      "value": "vmwithoutwa2"
+    },
+    "virtualMachineRG": {
+      "value": "rg-ck99io-compute"
+    },
+    "osDiskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_B1s"
+    },
+    "adminUsername": {
+      "value": "AzureUser"
+    },
+    "adminPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDG0CUYTRQtVMjfNQKcnADpDzr/0jx8EUF7n+7MEb78InVYDkJxg7r/r+6VL7qyPXdU7UloNz4FEZe0iJ7Lc7i1vXG90yb9XdRMopCEssbrfBrf3teHYD1cXr/CgsadRNGadIQl56XnORX53k9MPczOlQ9uy2F+FsmuJLLTOSEEbtc8zP4N1YxT12TOqLJSckoXnFm6XxHsmUT7qkBOFBMn7cQ2p/7WQCZFJzEB4+9I1F+mCDF5vE5KJTDwYBv7uh8tzRC2sBQ5ZoeRC0KhZ64h91x3jAbqG5qU00JNPKpoJ+rQJWSndbMm+Y67CeF1Sxcb7epirL3zCPV76TTrs3HB christian@cc-b2177221-7744985f49-k84sj dbMm+Y67CeF1Sxcb7epirL3zCPV76TTrs3HB christian@cc-b2177221-7744985f49-k84sjU00JNPKpoJ+rQJWSn"
+    },
+    "diagnosticsStorageAccountName": {
+      "value": "rgck99iocomputediag"
+    },
+    "diagnosticsStorageAccountId": {
+      "value": "Microsoft.Storage/storageAccounts/rgck99iocomputediag"
+    },
+    "diagnosticsStorageAccountType": {
+      "value": "Standard_LRS"
+    },
+    "diagnosticsStorageAccountKind": {
+      "value": "Storage"
+    },
+    "provisionVMAgent": {
+      "value": "false"
+    }
+  }
+}
