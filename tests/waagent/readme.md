@@ -16,6 +16,7 @@ sudo systemctl list-unit-files | grep agent
 sudo systemctl disable waagent
 sudo yum remove WALinuxAgent
 ```
+> Link zu Microsoft https://github.com/Azure/WALinuxAgent/wiki/VMs-without-WALinuxAgent
 ## Zusammenfassung:
 -	der Hoststatus wird bei beiden VMs richtig erkannt
 unhealthy wenn VM mit „halt“ gestoppt wurde
